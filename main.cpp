@@ -1,6 +1,5 @@
 #include <iostream>
-#include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
+#include "Window.h"
 
 using namespace std;
 const int WIDTH = 800, HEIGHT = 600;
@@ -9,7 +8,6 @@ int main(int argc, char *argv[])
     SDL_Init(SDL_INIT_EVERYTHING);
 
     SDL_Window *window = NULL;
-
 
     if (SDL_Init(SDL_INIT_VIDEO) < 0)
     {
